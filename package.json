@@ -1,0 +1,61 @@
+{
+  "name": "react-generator",
+  "version": "1.0.0",
+  "description": "React Component Generator",
+  "author": "Oguzhan Aslan",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "demo": "babel-node src/",
+    "copy": "cp package.json dist/ && cp README.md dist",
+    "build": "babel src -d dist --copy-files",
+    "lint": "eslint /src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist/",
+    "clean-test": "rimraf src/test/*"
+  },
+  "bin": {
+    "rcg": "./dist/index.js"
+  },
+  "keywords": [
+    "cli",
+    "components",
+    "react",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clui": "^0.3.6",
+    "commander": "^2.18.0",
+    "console.table": "^0.10.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "figlet": "^1.2.0",
+    "fs-extra": "^7.0.0",
+    "inquirer": "^6.2.0",
+    "inquirer-fuzzy-path": "^1.0.0",
+    "node-cmd": "^3.0.0",
+    "node-compat-require": "^1.0.5",
+    "npm": "^6.4.1",
+    "prettier": "1.14.3",
+    "readline-sync": "^1.4.9",
+    "rimraf": "^2.6.2",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
